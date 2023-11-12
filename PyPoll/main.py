@@ -41,7 +41,21 @@ candidates_votes_prct.append(percentage_0)
 candidates_votes_prct.append(percentage_1)
 candidates_votes_prct.append(percentage_2)
 
+output_path = os.path.join("output", "results.txt")
 
+#https://www.pythontutorial.net/python-basics/python-write-text-file/
+#https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time
+with open(output_path, "w") as f:
+
+    f.write("Election Results\n")
+    f.write("-----------------------\n")
+    f.write(f"Total Votes: {total_votes}\n")
+    f.write("-----------------------\n")
+    f.write(f"{candidates[0]}: {candidates_votes_prct[0]}% ({candidates_votes[0]})\n")
+    f.write(f"{candidates[1]}: {candidates_votes_prct[1]}% ({candidates_votes[1]})\n")
+    f.write(f"{candidates[2]}: {candidates_votes_prct[2]}% ({candidates_votes[2]})\n")
+    f.write("-----------------------\n")
+    f.write(f"Winner: {candidates[1]}\n")
 
 print("Election Results")
 print("-----------------------")
