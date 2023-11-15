@@ -90,7 +90,7 @@ with open(output_path, "w") as f:
     f.write(f"{candidates[1]}: {candidates_votes_prct[1]}% ({candidates_votes[1]})\n")
     f.write(f"{candidates[2]}: {candidates_votes_prct[2]}% ({candidates_votes[2]})\n")
     f.write("-----------------------\n")
-    f.write(f"Winner: {candidates[1]}")
+    f.write(f"Winner: {winner}")
 
 #print results to console
 print("Election Results")
