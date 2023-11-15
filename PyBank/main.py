@@ -35,6 +35,7 @@ with open(budget_csv) as csvfile:
                 #make a list for the months in each row
                 months_list.append(row[0])
 
+        #https://codefather.tech/blog/get-every-other-element-python-list/
         #loop through a range from 2 to the row number of the end of the profit_loss_list
         for x in range(1, len(profit_loss_list)):
                 #calculate the difference between the index value of the current row minus
@@ -68,6 +69,7 @@ with open(budget_csv) as csvfile:
         #  This will give a dictionary with the profit/loss changes for every month and its corresponding month name
         combined_months_profits = dict(zip(keys, values))
 
+        #had some help from ChatGPT here
         #loop through the keys and values of the combined_months_profits dictionary
         for key, value in combined_months_profits.items():
                 #check if the profit change is greater than the greatest_increase variable:
