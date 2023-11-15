@@ -59,6 +59,20 @@ candidates_votes_prct.append(percentage_0)
 candidates_votes_prct.append(percentage_1)
 candidates_votes_prct.append(percentage_2)
 
+#basis for this code is from classmate Tim Cole
+#check if number of votes for candidate 0 is greater than the other candidates votes
+if candidates_votes[0] > candidates_votes[1] and candidates_votes[0] > candidates_votes[2]:
+    #if it is, candidate 0 is the winner
+    winner = candidates[0]
+#otherwise, check if number of votes for candidate 1 is greater than the other candidates votes
+elif candidates_votes[1] > candidates_votes[0] and candidates_votes[1] > candidates_votes[2]:
+    #if it is, candidate 1 is the winner
+    winner = candidates[1]
+#check if number of votes for candidate 2 is greater than the other candidates votes
+elif candidates_votes[2] > candidates_votes[0] and candidates_votes[2] > candidates_votes[1]:
+    #if it is, candidate 2 is the winner
+    winner = candidates[2]
+
 #specify output path for new text file
 output_path = os.path.join("output", "results.txt")
 
@@ -87,4 +101,4 @@ print(f"{candidates[0]}: {candidates_votes_prct[0]}% ({candidates_votes[0]})")
 print(f"{candidates[1]}: {candidates_votes_prct[1]}% ({candidates_votes[1]})")
 print(f"{candidates[2]}: {candidates_votes_prct[2]}% ({candidates_votes[2]})")
 print("-----------------------")
-print(f"Winner: {candidates[1]}")
+print(f"Winner: {winner}")
