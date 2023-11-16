@@ -16,11 +16,11 @@ For this section, we had to create a Python script to analyze some voting data t
 
 <h1>Difficulties/Sources</h1>
 
-&emsp;I had a few issues remembering/utilizing proper syntax to get the code to do what I wanted. I utlized ChatGPT (though I am straying away from this as recommended) and StackOverflow for both PyBank and PyPoll assignments. I also used a chunk of code from classmate Tim Cole to determine the winner with code (I had originally written it to just output the winner based on my own knowledge of the popular vote winner and inserting their name into the script).
+&emsp;I had a few issues remembering/utilizing proper syntax to get the code to do what I wanted. I utlized ChatGPT (though I am straying away from this as recommended) and StackOverflow for both PyBank and PyPoll assignments. I also used a chunk of code from classmate Tim Cole to determine the winner for PyPoll.
 
 &emsp;For the PyBank portion, I needed help with figuring out how to loop through the Profits/Losses column so that I could find the difference between rows. I also needed help with the specific syntax for writing to a text file while adding page breaks.
 
-&emsp; For the PyPoll portion, I needed help with the syntax for checking if a string value was present in a list and adding that value to the list if it wasn't already in it.
+&emsp; For the PyPoll portion, I needed help with the syntax for checking if a string value was present in a list and adding that value to the list if it wasn't already in it. I also received some help from Tim Cole with determining the winner as a calculation (I had originally written it to just output the winner based on my own knowledge of the popular vote winner and inserting their name into the script).
 
 &emsp;All of these sources are called out in the comments above the line(s) of code it helped me with.
 
