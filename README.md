@@ -10,7 +10,7 @@ For this section, we had to create a Python script that analyzes the financial r
 
 <h1>PyPoll</h1>
 
-&emsp;For the PyPoll portion, we had to create a Python script to analyze some voting data to help a small town modernize its vote-counting process.
+For this section, we had to create a Python script to analyze some voting data to help a small town modernize its vote-counting process.
 
 &emsp;From this data, we again had to determine several values: the total number of votes cast, a complete list of candidates that received votes, the percentage of votes that each candidate won, the total number of votes each candidate received, and the winner of the election based on the popular vote. After this is all done, the script should output to the console and export a text file with the results.
 
